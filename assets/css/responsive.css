@@ -21,6 +21,9 @@
     .shoes__wrp .shoes__blk {
         flex-basis: 46%;
     }
+    .myCard__product__info .flex {
+        flex-direction: column;
+    }
 }
 
 
@@ -63,6 +66,12 @@
     .footer__btm {
         width: 100%;
         font-size: 16px;
+    }
+    .myCard__product__info .flex {
+        flex-direction: column;
+    }
+    .myCard__product__blk {
+        flex-direction: column;
     }
 }
 
@@ -138,7 +147,7 @@
         max-width: 600px;
         margin-inline: auto;
     }
-
+    .Checkout__left{padding: 0;}
 }
 
  
@@ -394,6 +403,44 @@
         padding-bottom: 100px;
     }
     .fixed__nav{display: block;}
+    .myCard__product__blk {
+        flex-direction: column;
+    }
+
+.order__summary .myCard__product__blk {
+    padding: 0;
+}
+    
+    .myCard__product__info .flex {
+        flex-direction: column;
+    }
+    .Checkout__left{padding: 0;}
+    ul.policy__list {
+        justify-content: center;
+        gap: 15px 30px;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .Checkout__link{padding: 12px 24px;font-size: 16px;}
+    .Checkout__email p {
+        font-size: 12px;
+    }
+    .Checkout__email h4 {
+        font-size: 16px;
+    }
+    
+    .input__blk input {
+        height: 50px;
+    }
+    
+    .form-check input {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .form-check {
+        align-items: flex-start;
+    }
 }
  
 /* Large Mobile screen :480px. */
