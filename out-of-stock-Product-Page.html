@@ -19,7 +19,7 @@
 
        
     <!-- header-area START -->
-    <div class="header-area ">
+    <div class="header-area hide">
         <div class="container lg">
             <div class="row align-items-center">
                 <div class="col-4 ">
@@ -35,23 +35,17 @@
                 </div>
                 <div class="col-4 ">
                     <div class="header__right">
-                        <a href=""><i><img src="assets/img/all-icons/shopping-cart.svg" alt=""></i> <span>My Cart</span></a>
-                        <a href=""><i><img src="assets/img/all-icons/user-icon.svg" alt=""></i> <span>Account</span></a>
+                        <a href="" class="MycardBtn"><i><img src="assets/img/all-icons/shopping-cart.svg" alt=""></i> <span>My Cart</span></a>
+                        <a href="" class="Accountbtn"><i><img src="assets/img/all-icons/user-icon.svg" alt=""></i> <span>Account</span></a>
                     </div>
                 </div>
-                <div class="col-6 d-block d-lg-none text-center">
-                    <div class="bar__icon">
-                        <a class="humbergar siteBar-btn" href="#">
-                            <span></span>
-                        </a>
-                    </div>
-                </div>
+                
                 <div class="col-lg-12">
                     <div class="page__nav">
                         <ul>
-                            <li><a href="" class="active">MEN</a></li>
-                            <li><a href="">WOMEN</a></li>
-                            <li><a href="">KIDS</a></li>
+                            <li><a href="Men-Category.html">MEN</a></li>
+                            <li><a href="Women-Category.html">WOMEN</a></li>
+                            <li><a href="Kids-Category.html">KIDS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,10 +54,299 @@
     </div>
     <!-- header-area END -->
 
+    <div class="loginSideBar sideBar__right">
+        <div class="continer">
+            <div class="signIn__blk ">
+               <div class="loginSideBar__top">
+                    <h3>Sign In <a href="" class="close__btn"><img src="assets/img/all-icons/x-icon.svg" alt=""></a></h3>
+                    <p>If you have an account with us, log in using your phone number.</p>
+               </div>
+               <div class="form__blk">
+                   <form action="">
+                       <div class="row">
+                           <div class="col-lg-12">
+                               <div class="input__blk">
+                                   <input type="text" placeholder="Phone Number">
+                               </div>
+                           </div>
+                           <div class="col-lg-12">
+                               <div class="input__blk">
+                                   <input type="Password" placeholder="Password">
+                               </div>
+                           </div>
+                           <div class="col-lg-12 text-end">
+                               <div class="">
+                                   <a href="" class="Forgot__btn">Forgot your password?</a>
+                               </div>
+                           </div>
+                           <div class="col-lg-12">
+                               <div class="">
+                                   <a href="" class="thm_btn w-100 c-black text-white">sIGN IN</a>
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+               <hr class="my-5">
+               <div class="signIn__blk__btm">
+                    <h5>Don’t have an account?</h5>
+                    <p>Create an account in order to pay faster, save multiple shipping addresses, view and track your orders, and more!</p>
+                    <a href=""  class="thm_btn w-100 creatBtn">CREATE AN ACCOUNT</a>
+               </div>
+            </div>
+            <div class="signUp__blk d-none">
+               <div class="loginSideBar__top">
+                    <h3>create an account <a href="" class="close__btn"><img src="assets/img/all-icons/x-icon.svg" alt=""></a></h3>
+                    <p>Create an account in order to pay faster, save multiple shipping addresses, view and track your orders, and more!</p>
+               </div>
+               <div class="form__blk">
+                   <form action="">
+                       <div class="row">
+                           <div class="col-lg-12">
+                               <div class="input__blk">
+                                   <input type="text" placeholder="Full name">
+                               </div>
+                           </div>
+                           <div class="col-lg-12">
+                               <div class="input__blk">
+                                   <input type="text" placeholder="Phone Number">
+                               </div>
+                           </div>
+                           <div class="col-lg-12">
+                               <div class="input__blk">
+                                   <input type="password" placeholder="Password">
+                               </div>
+                           </div>
+                           <div class="col-lg-12">
+                               <div class="input__blk">
+                                   <input type="password" placeholder="confirm Password">
+                               </div>
+                           </div>
+                           <div class="col-lg-12 mt-4">
+                               <div class="">
+                                   <a href="" class="thm_btn w-100 c-black text-white">CREATE AN ACCOUNT</a>
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+               <hr class="my-5">
+               <div class="signIn__blk__btm">
+                    <h5 class="mb-4">have an account already?</h5>
+                    <a href="" class="thm_btn w-100 signInBtn">SIGN IN</a>
+               </div>
+            </div>
+            <div class="Forgot__blk d-none">
+               <div class="loginSideBar__top">
+                    <h3>Forgot your password? <a href="" class="close__btn"><img src="assets/img/all-icons/x-icon.svg" alt=""></a></h3>
+                    <p>Please enter you Phone number below to receive a password reset link.</p>
+               </div>
+               <div class="form__blk">
+                   <form action="">
+                       <div class="row">
+                           <div class="col-lg-12">
+                               <div class="input__blk">
+                                   <input type="text" placeholder="Phone Number">
+                               </div>
+                           </div>
+                           <div class="col-lg-12 mt-4">
+                               <div class="">
+                                   <a href="" class="thm_btn w-100 c-black text-white changePassBtn">cHANGE MY PASSWORD</a>
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+            </div>
+            <div class="ForgotCode__blk d-none">
+               <div class="loginSideBar__top">
+                    <h3>Forgot your password? <a href="" class="close__btn"><img src="assets/img/all-icons/x-icon.svg" alt=""></a></h3>
+                    <p>You will receive an SMS. Please follow the instructions in the SMS to reset your password.</p>
+               </div>
+               <div class="form__blk">
+                   <form action="">
+                       <div class="row">
+                           <div class="col-lg-12 my-3 text-center mb-4">
+                               <div class="">
+                                <i><img src="assets/img/sms-code.png" alt=""></i>
+                               </div>
+                           </div>
+                           <div class="col-lg-12 mt-4">
+                               <div class="">
+                                   <a href="" class="thm_btn w-100 c-black text-white checkSms">CHECK MY SMS INBOX</a>
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+            </div>
+            <div class="reset__blk d-none">
+               <div class="loginSideBar__top">
+                    <h3>RESET YOUR PASSWORD <a href="" class="close__btn"><img src="assets/img/all-icons/x-icon.svg" alt=""></a></h3>
+                    <p>Please enter youR NEW PASSWORD AND CONFIRM IT.</p>
+               </div>
+               <div class="form__blk">
+                   <form action="">
+                       <div class="row">
+                            <div class="col-lg-12">
+                                  <div class="input__blk">
+                                    <input type="password" placeholder="New Password">
+                                  </div>
+                            </div>
+                            <div class="col-lg-12">
+                                  <div class="input__blk">
+                                    <input type="password" placeholder="Confirm New Password">
+                                  </div>
+                            </div>
+                           <div class="col-lg-12 mt-4">
+                               <div class="">
+                                   <a href="" class="thm_btn w-100 c-black text-white resetbtn">RESET YOUR PASSWORD</a>
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+            </div>
+            <div class="CodeDone__blk d-none">
+                <div class="loginSideBar__top">
+                     <h3>Password changed <a href="" class="close__btn"><img src="assets/img/all-icons/x-icon.svg" alt=""></a></h3>
+                     <p>Your password has been updated. If you didn’t make this change, please contact our support team immediately.</p>
+                </div>
+                <div class="form__blk">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-12 my-3 text-center mb-5">
+                                <div class="">
+                                 <i><img src="assets/img/all-icons/check-icon-lg.svg" alt=""></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-4">
+                                <div class="">
+                                    <a href="" class="thm_btn w-100 c-black text-white">RESET YOUR PASSWORD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="myCard__sideBar sideBar__right">
+        <div class="container">
+            <div class="sidebar__top">
+                <h3>my cart</h3>
+                <button type="button" class="MyClose"><img src="assets/img/all-icons/x-icon.svg" alt=""></button>
+            </div>
+            <div class="myCard__content">
+                <div class="myCard__product">
+                    <span>1 item in my cart</span>
+                    <div class="myCard__product__blk border">
+                        <div class="myCard__product__img">
+                            <img src="assets/img/product-item/shoe-1.png" alt="">
+                        </div>
+                        <div class="myCard__product__info">
+                            <h5>Cavallino Soft Leather & Light Weight Men’s Arabic Sandals</h5>
+                            <b>CAVALLINO</b>
+                            <div class="flex">
+                                <div class="myCard__product__price">
+                                    <span>size : 40</span>
+                                    <h6>sar 10.000</h6>
+                                </div>
+                                <div class="myCard__product__opt">
+                                    <a href=""><span>delete</span> <i><img src="assets/img/all-icons/delete-icon.svg" alt=""></i></a>
+                                    <a href=""><span>Add to wishlist</span> <i><img src="assets/img/all-icons/heart-icon-sm.svg" alt=""></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myCard__product__total">
+                    <ul class="total__list">
+                        <li><p>subtotal</p> <span>sar 10.000</span></li>
+                        <li><p>shipping</p> <span>sar 00</span></li>
+                        <li><p>VAt</p> <span>SAR 100</span></li>
+                        <li><p>estimated total</p> <span>sar 10.100</span></li>
+                    </ul>
+                    <a href="" class="thm_btn w-100 c-black text-white my-4">CHECKOUT NOW</a>
+                    <div class="payMathd">
+                        <a href="" class="thm_btn"><img src="assets/img/paypal.png" alt=""></a>
+                        <a href="" class="thm_btn"><img src="assets/img/ipay.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
 
-        <div class="border__sec">
+        <div class="size__sideBar">
+            <div class="container">
+                <div class="size__sideBar__top">
+                    <h4>size guide</h4>
+                    <button type="button" class="fltClose"><img src="assets/img/all-icons/x-icon.svg" alt=""></button>
+                </div>
+                <div class="size__sideBar__content">
+                    <div class="Size__blk">
+                        <h5>Men’s Shoe Size</h5>
+                        <div class="Size__table lg">
+                            <table class="table table-bordered">
+                                <tbody>
+                                  <tr>
+                                    <td>Foot Size</td>
+                                    <td>38</td>
+                                    <td>38.5</td>
+                                    <td>39</td>
+                                    <td>39.5</td>
+                                    <td>40</td>
+                                    <td>H</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Foot Lenght</td>
+                                    <td>23.7 cm</td>
+                                    <td>24.1 cm</td>
+                                    <td>24.5 cm</td>
+                                    <td>24.9 cm</td>
+                                    <td>25.3 cm</td>
+                                    <td>Wide</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="Size__blk">
+                        <h5>Shoes fit</h5>
+                        <div class="Size__table sm">
+                            <table class="table table-bordered">
+                                <tbody>
+                                  <tr>
+                                    <td>Fit</td>
+                                    <td>F</td>
+                                    <td>G</td>
+                                    <td>H</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Conversion</td>
+                                    <td>Small</td>
+                                    <td>Regular</td>
+                                    <td>Wide</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="Measur__blk">
+                        <div class="">
+                            <h5>Measurements guide</h5>
+                            <p>Measures are referred toe to heel</p>
+                        </div>
+                        <i><img src="assets/img/lag.png" alt=""></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border__sec d-none d-md-block">
             <div class="container lg">
                 <div class="row">
                     <div class="col-lg-12">
@@ -72,6 +355,23 @@
                                 <li><a href="">Men <img src="assets/img/all-icons/arrow-right.svg" alt=""></a></li>
                                 <li><a href="">Cavallino Shoes <img src="assets/img/all-icons/arrow-right.svg" alt=""></a></li>
                                 <li><a href="">Cavallino Soft Leather & Light Weight Men’s Arabic Sandals </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-opt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product__opt">
+                            <ul>
+                                <li><a><i><img src="assets/img/all-icons/Back-Icon-black.svg" alt=""></i></a></li>
+                                <li class="w-100"></li>
+                                <li><a class="sizeBtn-2"><i><img src="assets/img/all-icons/heart-icon-sm.svg" alt=""></i></a></li>
+                                <li><a><i><img src="assets/img/all-icons/share.svg" alt=""></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -120,7 +420,7 @@
                         <div class="pdc__option">
                             <ul>
                                 <li><button type="button"><i><img src="assets/img/all-icons/heart-icon-2.svg" alt=""></i> wish list</button></li>
-                                <li><button type="button"><i><img src="assets/img/all-icons/arrow-all-direction.svg" alt=""></i> Size Guide</button></li>
+                                <li><button type="button" class="sizeBtn"><i><img src="assets/img/all-icons/arrow-all-direction.svg" alt=""></i> Size Guide</button></li>
                                 <li><button type="button"><i><img src="assets/img/all-icons/git-compare.svg" alt=""></i> compare</button></li>
                             </ul>
                         </div>
@@ -302,6 +602,62 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script>
+
+
+            // increment decrement
+            let counter = 0;
+            
+            function increment() {
+              counter++;
+            }
+            
+            function decrement() {
+              counter--;
+            }
+            
+            function get() {
+              return counter;
+            }
+            
+            const inc = document.getElementById("increment");
+            const input = document.getElementById("input");
+            const dec = document.getElementById("decrement");
+            
+            inc.addEventListener("click", () => {
+              increment();
+              input.value = get();
+            });
+            
+            dec.addEventListener("click", () => {
+              if (input.value > 0) {
+                decrement();
+              }
+              input.value = get();
+            });
+            
+            
+            
+                // size__sideBar Active()
+                var sizeBtn = document.querySelector('.sizeBtn')
+                var sizeClose = document.querySelector('.fltClose')
+                var sizeSideBar = document.querySelector('.size__sideBar')
+                var body = document.querySelector('body')
+              
+                sizeBtn.addEventListener('click', () => {
+                    sizeSideBar.classList.add('show')
+                    body.classList.add('overflow-hidden')
+                })
+              
+                sizeClose.addEventListener('click', () => {
+                    sizeSideBar.classList.remove('show')
+                    body.classList.remove('overflow-hidden')
+                })
+                        
+            
+                    </script>
+
   <!-- Initialize Swiper -->
   <script>
 	var swiper = new Swiper('.mySwiper', {
@@ -321,38 +677,6 @@
       },
     });
 
-
-
-// increment decrement
-let counter = 0;
-
-function increment() {
-  counter++;
-}
-
-function decrement() {
-  counter--;
-}
-
-function get() {
-  return counter;
-}
-
-const inc = document.getElementById("increment");
-const input = document.getElementById("input");
-const dec = document.getElementById("decrement");
-
-inc.addEventListener("click", () => {
-  increment();
-  input.value = get();
-});
-
-dec.addEventListener("click", () => {
-  if (input.value > 0) {
-    decrement();
-  }
-  input.value = get();
-});
   </script>
     </body>
 </html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Wishlist</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+
+    <main>
+
+
+        <!--------- Section START ---------->
+        <section class="myProfile__mobile">
+            <div class="user__blk ">
+                <div class="upload-image">
+                    <input type="file" id="upload-button" multiple accept="image/*" />
+                    <label for="upload-button"><i><img src="assets/img/all-icons/camera.svg" alt=""></i></label>
+                    <div id="error"></div>
+                    <div id="image-display">
+                        <figure>
+                            <img src="assets/img/user-img.png" alt="">
+                            <figcaption>rapide-bg.png</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="user__info">
+                    <h6>mostafa samy</h6>
+                    <p>+966126907228</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="myProfile__nav">
+                            <ul>
+                                <li><a href="Account-Details.html"><i><img src="assets/img/all-icons/m-profile-1.svg" alt=""></i> Edit Account</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                <li><a href="Wishlist.html"><i><img src="assets/img/all-icons/m-profile-2.svg" alt=""></i> My cart</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                <li><a href="Orders.html"><i><img src="assets/img/all-icons/m-profile-3.svg" alt=""></i> My orders</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                <li><a href="Track-Order.html"><i><img src="assets/img/all-icons/m-profile-4.svg" alt=""></i> favorites</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                <li><a href="Addresses.html"><i><img src="assets/img/all-icons/m-profile-5.svg" alt=""></i> Comparison</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                <li>
+                                    <a href=""><i><img src="assets/img/all-icons/m-profile-6.svg" alt=""></i> setting</a> <img src="assets/img/all-icons/arrow-right.svg" alt="">
+                                    <ul>
+                                        <li><a href="About-us.html"><i><img src="assets/img/all-icons/m-profile-8.svg" alt=""></i> about us</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                        <li><a href="privacy-policy.html"><i><img src="assets/img/all-icons/m-profile-9.svg" alt=""></i> privacy policy</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                        <li><a href="Contact-us.html"><i><img src="assets/img/all-icons/m-profile-10.svg" alt=""></i> Contact us </a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                        <li><a href="Addresses.html"><i><img src="assets/img/all-icons/m-profile-11.svg" alt=""></i> my address</a> <img src="assets/img/all-icons/arrow-right.svg" alt=""></li>
+                                    </ul>
+                                </li>
+                                <li><a href="index.html" class="text-danger"><i><img src="assets/img/all-icons/m-profile-7.svg" alt=""></i> <b>logout</b></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Section End ---------->
+
+
+    </main>
+
+
+    
+		<!-- JS here --> 
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            let uploadButton = document.getElementById("upload-button");
+            let chosenImage = document.getElementById("chosen-image");
+            let fileName = document.getElementById("file-name");
+            let container = document.querySelector(".upload-image");
+            let error = document.getElementById("error");
+            let imageDisplay = document.getElementById("image-display");
+    
+            const fileHandler = (file, name, type) => {
+                if (type.split("/")[0] !== "image") {
+                    //File Type Error
+                    error.innerText = "Please upload an image file";
+                    return false;
+                }
+                error.innerText = "";
+                let reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onloadend = () => {
+                    //image and file name
+                    let imageContainer = document.createElement("figure");
+                    let img = document.createElement("img");
+                    img.src = reader.result;
+                    imageContainer.appendChild(img);
+                    imageContainer.innerHTML += `<figcaption>${name}</figcaption>`;
+                    imageDisplay.appendChild(imageContainer);
+                };
+            };
+    
+            //Upload Button
+            uploadButton.addEventListener("change", () => {
+                imageDisplay.innerHTML = "";
+                Array.from(uploadButton.files).forEach((file) => {
+                    fileHandler(file, file.name, file.type);
+                });
+            });
+    
+            container.addEventListener(
+                "dragenter",
+                (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    container.classList.add("active");
+                },
+                false
+            );
+    
+            container.addEventListener(
+                "dragleave",
+                (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    container.classList.remove("active");
+                },
+                false
+            );
+    
+            container.addEventListener(
+                "dragover",
+                (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    container.classList.add("active");
+                },
+                false
+            );
+    
+            container.addEventListener(
+                "drop",
+                (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    container.classList.remove("active");
+                    let draggedData = e.dataTransfer;
+                    let files = draggedData.files;
+                    imageDisplay.innerHTML = "";
+                    Array.from(files).forEach((file) => {
+                        fileHandler(file, file.name, file.type);
+                    });
+                },
+                false
+            );
+    
+            window.onload = () => {
+                error.innerText = "";
+            };
+        </script>
+    </body>
+</html>
+
+
